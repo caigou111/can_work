@@ -1,0 +1,177 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>厦门环游记</title>
+	
+ <script>
+		function myFunction(){
+			var x;
+			var r=confirm("准备好了吗？");
+			if (r==true){
+				x="赶快来吧！";
+			}
+			else{
+				x="为什么不呢？";
+			}
+			document.getElementById("demo").innerHTML=x;
+		}
+	</script>
+    <style>
+        html,
+		 body{
+           background-image: url('img/背景.jpg');
+					  
+        }
+		.header {
+		  background-color:lightgray;
+		  margin:5px 80px;
+		  color:CadetBlue;
+		  font-size:40px;
+		  text-align: center;
+		  font-family:"STSong", cursive, sans-serif;
+		}
+		ul {
+		    list-style-type: none;
+		    margin: 0px 80px;
+		    padding:10;
+			position: absolute;
+		    width: 15%;
+		    background-color:lightgray;
+		    height: 100%;
+		    overflow: auto;
+		}
+		
+		li a {
+		    display: block;
+		    color: DarkSlateGray;
+			font-size:25px;
+		    padding: 8px 16px;
+		    text-decoration:none;
+			font-family:"STSong", cursive, sans-serif;
+		}
+		
+		li a.active {
+		    background-color: #98afa6;
+		    color: white;
+		
+		}
+		
+		li a:hover:not(.active) {
+		    background-color: #9caa7b;
+		    color: white;
+			
+		}
+		h3{font-size:35px;
+			margin-left: 5%;
+			color: Ivory;
+			
+		}
+		h2{
+			font-size:30px;
+			margin-left: 53%;
+			color: Ivory;
+			
+		}p.qq
+		{ margin-left:40%;
+		color:  #F0F8FF;
+		font-size:30px;
+		}       
+		#viewDiv {
+					
+		           padding: 0;
+		           margin: 0;
+		           height: 60%;
+		           width: 80%;
+				   margin:10px 35px;
+		
+		button{
+			background-color: #2E8B57;
+			color: aliceblue;
+			font-size:30px ;
+			font-family:"Comic Sans MS", cursive, sans-serif;
+		}
+        
+		
+		
+    </style>
+
+    <link rel="stylesheet" href="https://js.arcgis.com/4.19/esri/themes/light/main.css">
+    <script src="https://js.arcgis.com/4.19/"></script>
+
+    <script>
+        require(["esri/config",
+            "esri/Map",
+            "esri/views/MapView",
+            "esri/layers/FeatureLayer",
+            "esri/layers/MapImageLayer",
+            "esri/widgets/LayerList",
+            "esri/layers/TileLayer"], function (esriConfig, Map, MapView, FL, MapImageLayer, LayerList, TLayer) {
+
+                esriConfig.apiKey = "AAPKf8cae4f9e7a74d8ea5cffba4a3bed415WBsbPH7EYjAa6ECrjNG78Zzg5-DoXsv6pgDHP7CnWP2bULQgKKz3CyFFwrOIumXf";
+
+                const map = new Map({
+                    basemap: "arcgis-topographic" // Basemap layer service
+                });
+
+                const view = new MapView({
+                    map: map,
+                    center: [118.109629,24.4479 ], // Longitude, latitude
+                    zoom: 11, // Zoom level
+                    container: "viewDiv" // Div element
+                });
+
+                
+                
+
+               
+            });
+    </script>
+   
+		
+</head>
+
+<body>
+	<div class="header">
+	  <h1><span>&#127811</span>厦 门 环 游 记</h1>
+	</div>
+	<ul>
+	  <li><a class="active" href="#home">主页</a></li>
+	  <li><a href="https://baike.baidu.com/item/%E5%8E%A6%E9%97%A8/212357?fr=aladdin">历史</a></li>
+	  <li><a href="#contact">联系</a></li>
+	  <li><a href="#about">关于</a></li>
+	</ul>
+	<!--主要内容-->
+	  
+	  <div class='one'style="margin-left:40%;padding:1px 16px;"><img  src="img/日落栈道.jpg" alt="Puipit rock" width="400" height="400"></div>
+	  <h2>落日栈道</h2> 
+	  <p class="xx" style="font-size:25px;margin-left:25%;padding:1px 20px;color: Ivory;">在这里可以看环岛路和厦门双子塔，可以感受这个城市的浪漫的落日，在晴天四点多抵达散会步等夕阳</p>
+	  
+	  <div class='one'style="margin-left:40%;padding:1px 16px;"><img  src="img/钟鼓索道.jpg" alt="Puipit rock" width="400" height="400"></div>
+	  <h2>钟鼓索道</h2> 
+	  <p class="cc" style="font-size:25px;margin-left:25%;padding:1px 20px;color: Ivory;">坐于缆车内，悠悠然在空中运行，腾着云架着雾，飞过山，越过森林;车在空中行，人在云中唱;山高路险，在吊椅上征服;多少风光摄进你的眼框</p>
+	  <div class='one'style="margin-left:40%;padding:1px 16px;"><img  src="img/鼓浪屿.jpg" alt="Puipit rock" width="400" height="400"></div>
+	  
+	  <p class="yy" style="font-size:25px;margin-left:25%;padding:1px 20px;color: Ivory;">鼓浪屿素有“海上花园”之誉，岛上气候宜人，四季如春，无车马喧嚣，处处鸟语花香，宛如一颗璀璨的“海上明珠”，镶嵌在厦门海湾的碧海绿波之中。</p>
+	  <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+	  <h3>位置：</h3> 
+	  <div id="viewDiv"></div>
+	  <button onclick="myFunction()" style="background-color: #2E8B57;margin-left:40%;
+			color: aliceblue;
+			font-size:25px ;
+			font-family:"Comic Sans MS", cursive, sans-serif;">Ready to go</button>
+	  <p class="qq" id="demo"></p>
+	  	 
+	  </td>
+	  </tr>
+	  
+	 
+	  
+	  
+	  
+	</div>
+    
+</body>
+
+</html>
